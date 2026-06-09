@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host With Us | Zia Maria – Private Events & Celebrations</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/shared.css">
+    
+    <style>
+        .page-hero {
+            background-color: var(--red);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .page-hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .page-hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .host-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding: 80px 0;
+        }
+        
+        .features-intro {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: var(--text-mid);
+        }
+        
+        .feature-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .feature-box {
+            padding: 25px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: 0.3s;
+        }
+        
+        .feature-box:hover {
+            border-color: var(--red);
+            box-shadow: var(--shadow);
+        }
+        
+        .feature-box span {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .feature-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-box p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+        
+        .form-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-full {
+            width: 100%;
+        }
+        
+        @media (max-width: 1024px) {
+            .host-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .feature-cards {
+                grid-template-columns: 1fr;
+            }
+            .form-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="serif italic">Host With Us</h1>
+                <p>Private events, birthdays, corporate dinners & more</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="host-content">
+            <div class="container">
+                <div class="host-grid">
+                    <!-- Features Column -->
+                    <div class="host-features">
+                        <p class="features-intro">Planning something special? Our Friedrichshain space is the perfect setting for intimate gatherings and celebrations. We bring the authentic taste of Italy to your event.</p>
+                        
+                        <div class="feature-cards">
+                            <div class="feature-box">
+                                <span>🎂</span>
+                                <h3 class="serif">Private Dining</h3>
+                                <p>Exclusive use of our space for up to 40 guests.</p>
+                            </div>
+                            <div class="feature-box">
+                                <span>🍕</span>
+                                <h3 class="serif">Custom Menu</h3>
+                                <p>Tailored pizza & antipasti menus for your group.</p>
+                            </div>
+                            <div class="feature-box">
+                                <span>🍷</span>
+                                <h3 class="serif">Drinks Package</h3>
+                                <p>Curated wine, beer & soft drink packages.</p>
+                            </div>
+                            <div class="feature-box">
+                                <span>✨</span>
+                                <h3 class="serif">Flexible Setup</h3>
+                                <p>We adapt the space to your vision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Enquiry Form Column -->
+                    <div class="host-form">
+                        <div class="form-card">
+                            <h2 class="serif italic" style="margin-bottom: 25px;">Event Enquiry</h2>
+                            <div id="statusMessage" style="display: none;"></div>
+                            <form id="hostForm">
+                                <div class="form-group">
+                                    <label for="yourName">Your Name *</label>
+                                    <input type="text" id="yourName" name="yourName" required>
+                                </div>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                    <div class="form-group">
+                                        <label for="phone">Phone *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" name="city" placeholder="Berlin">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="eventDate">Event Date</label>
+                                        <input type="date" id="eventDate" name="eventDate">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="eventType">Event Type *</label>
+                                    <select id="eventType" name="eventType" required>
+                                        <option value="">Select Type</option>
+                                        <option value="Birthday">Birthday</option>
+                                        <option value="Corporate Dinner">Corporate Dinner</option>
+                                        <option value="Team Event">Team Event</option>
+                                        <option value="Wedding">Wedding</option>
+                                        <option value="Private Celebration">Private Celebration</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                    <div class="form-group">
+                                        <label for="guests">Expected Guest Count *</label>
+                                        <select id="guests" name="guests" required>
+                                            <option value="Up to 10">Up to 10</option>
+                                            <option value="10–20">10–20</option>
+                                            <option value="20–30">20–30</option>
+                                            <option value="30–40">30–40</option>
+                                            <option value="40+">40+</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="budget">Budget Range</label>
+                                        <select id="budget" name="budget">
+                                            <option value="Under €500">Under €500</option>
+                                            <option value="€500–€1000">€500–€1000</option>
+                                            <option value="€1000–€2000">€1000–€2000</option>
+                                            <option value="€2000+">€2000+</option>
+                                            <option value="To be discussed">To be discussed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Tell us about your event *</label>
+                                    <textarea id="message" name="message" required style="min-height: 110px;"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-full">Send Enquiry</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Components -->
+    <script src="./assets/js/components.js"></script>
+    <!-- Form Logic -->
+    <script src="./assets/js/forms.js"></script>
+</body>
+</html>

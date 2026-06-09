@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Zia Maria – Friedrichshain, Berlin</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/shared.css">
+    
+    <style>
+        .page-hero {
+            background-color: var(--red);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .page-hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .page-hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding: 80px 0;
+        }
+        
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-item i {
+            font-size: 20px;
+            color: var(--red);
+            margin-top: 5px;
+        }
+        
+        .contact-item h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .contact-item p {
+            color: var(--text-mid);
+        }
+        
+        .hours-table {
+            width: 100%;
+            margin-top: 40px;
+            border-collapse: collapse;
+        }
+        
+        .hours-table tr {
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .hours-table td {
+            padding: 12px 0;
+            color: var(--text-mid);
+        }
+        
+        .hours-table td:last-child {
+            text-align: right;
+            font-weight: 600;
+        }
+        
+        .map-wrapper {
+            height: 100%;
+            min-height: 420px;
+        }
+        
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .map-wrapper {
+                min-height: 380px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="serif italic">Find Us</h1>
+                <p>Neue Bahnhofstraße 32, Friedrichshain</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Info Column -->
+                    <div class="contact-info">
+                        <h2 class="serif italic">Get in Touch</h2>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>Neue Bahnhofstraße 32, 10245 Berlin</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:017627705583">017627705583</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:bringteamtogether@ziamariaberlin.com">bringteamtogether@ziamariaberlin.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links" style="font-size: 24px; margin-bottom: 40px;">
+                            <a href="https://www.instagram.com/ziamaria.fhain" target="_blank" rel="noopener noreferrer" style="margin-right: 20px;"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/ziamaria.berlin" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        </div>
+                        
+                        <h3 class="serif italic" style="font-size: 24px; margin-bottom: 10px;">Opening Hours</h3>
+                        <table class="hours-table">
+                            <tr><td>Monday</td><td>12:00 – 22:00</td></tr>
+                            <tr><td>Tuesday</td><td>12:00 – 22:00</td></tr>
+                            <tr><td>Wednesday</td><td>12:00 – 22:00</td></tr>
+                            <tr><td>Thursday</td><td>12:00 – 23:00</td></tr>
+                            <tr><td>Friday</td><td>12:00 – 23:00</td></tr>
+                            <tr><td>Saturday</td><td>12:00 – 23:00</td></tr>
+                            <tr><td>Sunday</td><td>12:00 – 22:00</td></tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Map Column -->
+                    <div class="contact-map">
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.8!2d13.4691545!3d52.5052471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84f70271ffbe9%3A0xe1f929903a803939!2sPizza%20Zia%20Maria%20-%20pizzeria!5e0!3m2!1sen!2sde!4v1" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Components -->
+    <script src="./assets/js/components.js"></script>
+</body>
+</html>

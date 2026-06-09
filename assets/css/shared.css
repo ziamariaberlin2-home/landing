@@ -1,0 +1,330 @@
+:root {
+    --red: rgb(195, 52, 25);
+    --red-dark: rgb(160, 38, 15);
+    --white: rgba(255, 255, 255, 1);
+    --off-white: #faf9f7;
+    --light-gray: #f2f0ed;
+    --text-dark: #1a1a1a;
+    --text-mid: #4a4a4a;
+    --text-muted: #8a8a8a;
+    --border: #e0ddd9;
+    --shadow: 0 2px 16px rgba(0,0,0,0.07);
+    --radius: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--red-dark);
+}
+
+.btn-secondary {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+.btn-secondary:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.btn-white-outline {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.btn-white-outline:hover {
+    background-color: var(--white);
+    color: var(--red);
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--red);
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-mid);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(195, 52, 25, 0.1);
+}
+
+.error-message {
+    color: var(--red);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+.bg-off-white { background-color: var(--off-white); }
+.bg-red { background-color: var(--red); color: var(--white); }
+
+/* Navigation */
+header {
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo img {
+    height: 44px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--red);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--red);
+}
+
+.nav-links a:hover {
+    color: var(--red);
+}
+
+.mobile-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: var(--off-white);
+    padding: 60px 0 20px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.footer-col p, .footer-col li {
+    color: var(--text-mid);
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-logo img {
+    height: 36px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .mobile-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Typography Loop Animation */
+.typography-loop-container {
+    background-color: #c63c1e; /* Logo Red */
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: clamp(6px, 1vw, 12px) 0; /* Reduced padding for a more subtle strip */
+}
+
+.typography-loop {
+    display: flex;
+    width: max-content; 
+    align-items: center;
+    animation: loopText 50s linear infinite; /* Smooth, steady speed */
+}
+
+.loop-text {
+    font-family: 'Fredoka', sans-serif; 
+    font-weight: 600; /* Slightly lighter weight for elegance */
+    font-size: clamp(1.2rem, 3.5vw, 2.2rem); /* Smaller, more aesthetic font size */
+    color: rgba(255, 255, 255, 0.9); /* Subtle white */
+    white-space: nowrap;
+    padding-right: 0.5em; 
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.02em; /* Slight spacing for better legibility at smaller sizes */
+}
+
+@keyframes loopText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+}

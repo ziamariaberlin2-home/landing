@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zia Maria – Contemporary Italian Pizza | Friedrichshain, Berlin</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/shared.css">
+    
+    <style>
+        /* Page Specific Styles */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38)), 
+                        url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: -80px; /* Offset sticky header height */
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        .hero-eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 72px);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero p {
+            font-size: clamp(18px, 3vw, 24px);
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-features {
+            margin-top: 30px;
+        }
+        
+        .feature-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .feature-row span {
+            font-size: 24px;
+        }
+        
+        .about-image img {
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        /* Menu Preview */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .menu-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .preview-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: 0.3s;
+        }
+        
+        .preview-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        
+        .preview-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .preview-info {
+            padding: 20px;
+        }
+        
+        .preview-info h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .preview-info p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .preview-price {
+            color: var(--red);
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .preview-cta {
+            text-align: center;
+        }
+        
+        /* Host Teaser */
+        .host-teaser {
+            text-align: center;
+        }
+        
+        .host-teaser h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .host-teaser p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Find Us */
+        .find-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .map-container iframe {
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        @media (max-width: 768px) {
+            .about-grid, .find-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- DEPLOYMENT: Push this folder to GitHub. Go to Settings → Pages → Source: main branch / root. 
+         To connect your GoDaddy domain: in GoDaddy DNS, add a CNAME record pointing to yourusername.github.io
+         Then add your custom domain in GitHub Pages settings. -->
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-eyebrow">Friedrichshain · Berlin</span>
+                <h1 class="serif italic">Contemporary Italian Pizza</h1>
+                <p>Fresh dough. Real ingredients. Made with love in Fhain.</p>
+                <div class="hero-btns">
+                    <a href="./menu.html" class="btn btn-primary">View Menu</a>
+                    <a href="./reserve.html" class="btn btn-white-outline">Reserve a Table</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Loop -->
+        <div class="typography-loop-container">
+            <div class="typography-loop">
+                <div class="loop-text">zia maria • zia maria • zia maria • zia maria • zia maria • zia maria • zia maria • zia maria • </div>
+                <div class="loop-text">zia maria • zia maria • zia maria • zia maria • zia maria • zia maria • zia maria • zia maria • </div>
+            </div>
+        </div>
+
+
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="serif italic" style="font-size: 40px; margin-bottom: 20px;">Our Story</h2>
+                        <p>Zia Maria is your neighborhood Italian in the heart of Friedrichshain. We specialize in Roman-style pizza, crafted with a long-fermentation dough that's light, crispy, and incredibly flavorful. Our ethos is simple: seasonal ingredients, community spirit, and authentic taste.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-row">
+                                <span>🍕</span>
+                                <p>Roman-style dough</p>
+                            </div>
+                            <div class="feature-row">
+                                <span>🌿</span>
+                                <p>Seasonal ingredients</p>
+                            </div>
+                            <div class="feature-row">
+                                <span>🏡</span>
+                                <p>Neighbourhood spirit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Zia Maria Interior">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Preview -->
+        <section class="menu-preview bg-off-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="serif italic" style="font-size: 40px;">A Taste of What's Inside</h2>
+                </div>
+                
+                <div class="menu-preview-grid">
+                    <!-- Margherita -->
+                    <div class="preview-card">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?w=600&q=80" alt="Pizza Margherita">
+                        <div class="preview-info">
+                            <h3 class="serif">Pizza Margherita</h3>
+                            <p>Tomato sauce, mozzarella, fresh basil, extra virgin olive oil.</p>
+                            <span class="preview-price">€9.50</span>
+                        </div>
+                    </div>
+                    <!-- Piccantina -->
+                    <div class="preview-card">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600&q=80" alt="Pizza Piccantina">
+                        <div class="preview-info">
+                            <h3 class="serif">Pizza Piccantina</h3>
+                            <p>Tomato sauce, mozzarella, spicy salami, chili flakes.</p>
+                            <span class="preview-price">€11.50</span>
+                        </div>
+                    </div>
+                    <!-- Insalata Di Capra -->
+                    <div class="preview-card">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80" alt="Insalata Di Capra">
+                        <div class="preview-info">
+                            <h3 class="serif">Insalata Di Capra</h3>
+                            <p>Mixed greens, goat cheese, walnuts, honey balsamic dressing.</p>
+                            <span class="preview-price">€10.50</span>
+                        </div>
+                    </div>
+                    <!-- Tiramisu -->
+                    <div class="preview-card">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80" alt="Tiramisu">
+                        <div class="preview-info">
+                            <h3 class="serif">Tiramisu</h3>
+                            <p>Homemade classic Italian tiramisu with coffee and mascarpone.</p>
+                            <span class="preview-price">€6.50</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="preview-cta">
+                    <a href="./menu.html" class="btn btn-primary">Explore the Full Menu →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Host Teaser -->
+        <section class="host-teaser bg-red">
+            <div class="container">
+                <h2 class="serif italic">Planning an Event?</h2>
+                <p>Birthday dinners, corporate events, private celebrations — our space is yours.</p>
+                <a href="./host.html" class="btn btn-white">Learn More →</a>
+            </div>
+        </section>
+
+        <!-- Find Us -->
+        <section class="find-us">
+            <div class="container">
+                <div class="find-grid">
+                    <div class="find-info">
+                        <h2 class="serif italic" style="font-size: 40px; margin-bottom: 20px;">Find Us</h2>
+                        <p style="margin-bottom: 20px;">
+                            <strong>Address:</strong><br>
+                            Neue Bahnhofstraße 32, 10245 Berlin
+                        </p>
+                        <p style="margin-bottom: 20px;">
+                            <strong>Hours:</strong><br>
+                            Mon - Wed: 12:00–22:00<br>
+                            Thu - Sat: 12:00–23:00<br>
+                            Sun: 12:00–22:00
+                        </p>
+                        <p style="margin-bottom: 20px;">
+                            <strong>Contact:</strong><br>
+                            Phone: <a href="tel:017627705583">017627705583</a><br>
+                            Email: <a href="mailto:bringteamtogether@ziamariaberlin.com">bringteamtogether@ziamariaberlin.com</a>
+                        </p>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.8!2d13.4691545!3d52.5052471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84f70271ffbe9%3A0xe1f929903a803939!2sPizza%20Zia%20Maria%20-%20pizzeria!5e0!3m2!1sen!2sde!4v1" 
+                            width="100%" 
+                            height="380" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Components -->
+    <script src="./assets/js/components.js"></script>
+</body>
+</html>
