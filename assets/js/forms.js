@@ -8,13 +8,13 @@
 // 4. Go to Account → API Keys → copy your Public Key
 // 5. Replace the three placeholder strings below with your real values
 
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
-const EMAILJS_RESERVATION_TEMPLATE = 'YOUR_RESERVATION_TEMPLATE_ID';
-const EMAILJS_HOST_TEMPLATE = 'YOUR_HOST_TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY = 'fJjxFb00WcpGc9lDX';
+const EMAILJS_RESERVATION_TEMPLATE = 'template_aul6fwl';
+const EMAILJS_HOST_TEMPLATE = 'template_q4vwcwm';
 const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize EmailJS
+    // Initialize EmailJSgit
     if (typeof emailjs !== 'undefined') {
         emailjs.init(EMAILJS_PUBLIC_KEY);
     }
