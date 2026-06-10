@@ -13,6 +13,7 @@ const EMAILJS_RESERVATION_TEMPLATE = 'template_aul6fwl';
 const EMAILJS_HOST_TEMPLATE = 'template_q4vwcwm';
 const EMAILJS_SERVICE_ID = 'service_kbchpcs';
 
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize EmailJSgit
     if (typeof emailjs !== 'undefined') {
