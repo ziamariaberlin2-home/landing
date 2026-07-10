@@ -71,7 +71,35 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
-            align-items: center;
+            align-items: stretch;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px 0;
+        }
+
+        .story-lede {
+            color: var(--red);
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(24px, 2.5vw, 32px);
+            line-height: 1.25;
+            margin-bottom: 24px;
+        }
+
+        .story-body {
+            color: var(--text-mid);
+            font-size: 17px;
+            margin-bottom: 16px;
+        }
+
+        .about-image {
+            height: 620px;
+            background: var(--off-white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
         }
         
         .about-features {
@@ -91,8 +119,10 @@
         }
         
         .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
             border-radius: var(--radius);
-            box-shadow: var(--shadow);
         }
         
         /* Menu Preview */
@@ -188,6 +218,7 @@
             
             .about-image {
                 order: -1;
+                height: 440px;
             }
         }
     </style>
@@ -227,12 +258,12 @@
                 <div class="about-grid">
                     <div class="about-content">
                         <h2 class="serif italic" style="font-size: 40px; margin-bottom: 20px;">Our Story</h2>
-                        <p><strong>In Italian, <em>zia</em> means aunt.</strong></p>
-                        <p>And in every culture, the aunt is the one who holds everything together.</p>
-                        <p>She makes space when there isn&rsquo;t any. She remembers what everyone likes. She makes sure no one leaves hungry &mdash; and somehow always makes enough for one more.</p>
-                        <p>That&rsquo;s the spirit of Zia.</p>
-                        <p>We believe a good meal is never just about the food. It&rsquo;s about a table set properly, people feeling at home, and the kind of warmth that makes an ordinary evening worth remembering.</p>
-                        <p>Come as you are. Bring who matters. We&rsquo;ll take care of the rest.</p>
+                        <p class="story-lede"><strong>In Italian, <em>zia</em> means aunt.</strong></p>
+                        <p class="story-body">And in every culture, the aunt is the one who holds everything together.</p>
+                        <p class="story-body">She makes space when there isn&rsquo;t any. She remembers what everyone likes. She makes sure no one leaves hungry &mdash; and somehow always makes enough for one more.</p>
+                        <p class="story-body">That&rsquo;s the spirit of Zia.</p>
+                        <p class="story-body">We believe a good meal is never just about the food. It&rsquo;s about a table set properly, people feeling at home, and the kind of warmth that makes an ordinary evening worth remembering.</p>
+                        <p class="story-body">Come as you are. Bring who matters. We&rsquo;ll take care of the rest.</p>
                         
                         <div class="about-features" hidden>
                             <div class="feature-row">

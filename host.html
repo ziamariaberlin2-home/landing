@@ -45,18 +45,41 @@
         }
         
         .features-intro {
-            font-size: 18px;
-            margin-bottom: 40px;
+            border-left: 4px solid var(--red);
+            padding-left: 24px;
+            margin-bottom: 48px;
             color: var(--text-mid);
         }
 
+        .features-intro p {
+            font-size: 17px;
+            margin-bottom: 16px;
+        }
+
+        .features-intro p:first-child {
+            color: var(--red);
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(26px, 3vw, 34px);
+            line-height: 1.2;
+        }
+
+        .features-intro p:nth-child(2) {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            line-height: 1.35;
+        }
+
         .gathering-details h2 {
-            margin-top: 42px;
-            margin-bottom: 12px;
+            color: var(--red);
+            font-size: clamp(30px, 3.5vw, 42px);
+            line-height: 1.2;
+            margin-bottom: 16px;
         }
 
         .gathering-details h3 {
-            margin-top: 28px;
+            font-size: 23px;
+            line-height: 1.25;
+            margin-top: 32px;
             margin-bottom: 10px;
         }
 
@@ -65,7 +88,12 @@
         }
 
         .gathering-details ul {
+            list-style: disc;
             margin: 14px 0 0 20px;
+        }
+
+        .gathering-details li {
+            margin-bottom: 8px;
         }
         
         .feature-cards {
