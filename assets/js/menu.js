@@ -58,6 +58,48 @@ menuData.push(
     { name: "Proviant Cola", description: "Cola, Flasche 0,33 L", price: "€4.00", category: "🥤 Non-Alcoholic Drinks", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760306193680-657882115.png" }
 );
 
+// Complete pizza and salad selections from the current restaurant menu.
+menuData.push(
+    { name: "Pizza Toscana", description: "zucchini, zwiebeln, paprika, schwarze oliven, olivenöl, minze", price: "€4.50", category: "🌱 Vegan Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-143-toscana-primary.jpg" },
+    { name: "Pizza Marinara", description: "tomatensauce, knoblauch, kirschtomaten, oregano, olivenöl", price: "€4.00", category: "🌱 Vegan Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-141-marinara-primary.jpg" },
+    { name: "Pizza Rusticana", description: "tomatensauce, artischoken, getrocknete tomaten, schwarze oliven, walnüsse, knoblauch, chili, olivenöl", price: "€5.50", category: "🌱 Vegan Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-147-rusticana-primary.jpg" },
+    { name: "Pizza Noci", description: "auberginen, kartoffeln, walnüsse, rucola, knoblauch, olivenöl", price: "€5.50", category: "🌱 Vegan Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-145-noci-primary.jpg" },
+    { name: "Pizza Primavera", description: "zucchini, zwiebeln, kirschtomaten, olivenöl, minze", price: "€4.00", category: "🌱 Vegan Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-142-primavera-primary.jpg" },
+    { name: "Pizza Melanzane e Funghi", description: "champignons, knoblauch, auberginen, chili, olivenöl, getrocknete tomaten", price: "€5.00", category: "🌱 Vegan Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-118-melanzane-e-funghi-primary.jpg" },
+
+    { name: "Pizza Patate & Pecorino", description: "tomatensauce, mozzarella, zucchini, zwiebeln, kartoffeln, schafskäse", price: "€5.00", category: "🥬 Vegetarian Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760301060032-451660881.jpg" },
+    { name: "Pizza Verdure", description: "tomatensauce, mozzarella, verschiedene gebackene gemüse, knoblauch, oregano, schwarze oliven", price: "€4.50", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-95-verdure-primary.jpg" },
+    { name: "Pizza Rucola", description: "tomato sauce, mozzarella, rocket, cherry tomatoes, parmesan", price: "€4.50", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-94-rucola-primary.jpg" },
+    { name: "Pizza Spinaci", description: "tomato sauce, mozzarella, spinach, ricotta, parmesan", price: "€4.50", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-90-spinaci-primary.jpg" },
+    { name: "Pizza Margherita", description: "tomatensauce, mozzarella, basilikum", price: "€4.00", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-86-margherita-primary.jpg" },
+    { name: "Pizza Calabrese", description: "tomatensauce, mozzarella, paprika, kirschtomaten, artischocken, schwarze oliven (2), knoblauch, chili", price: "€5.00", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-97-calabrese-primary.jpg" },
+    { name: "Pizza Zucchini", description: "tomato sauce, mozzarella, courgettes, onions, cherry tomatoes, mint", price: "€4.50", category: "🥬 Vegetarian Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760300787968-872573845.jpg" },
+    { name: "Pizza Caprina", description: "tomatensauce, kirschtomaten, ziegenfrischkäse, walnüsse, getrocknete tomaten, rucola", price: "€6.00", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-112-caprina-primary.jpg" },
+    { name: "Pizza Formaggi", description: "tomatensauce, mozzarella, gorgonzola, geräucherter scamorza, provolone, rosmarin", price: "€5.50", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-88-formaggi-primary.jpg" },
+
+    { name: "Pizza Piccantina", description: "tomatensauce, mozzarella, scharfe salami (1), parmesan", price: "€5.00", category: "🍖 Meat Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760303878299-499818236.png" },
+    { name: "Pizza Funghi & Speck", description: "tomatensauce, mozzarella, speck, champignons, parmesan", price: "€5.00", category: "🍖 Meat Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760304106588-678122712.jpg" },
+    { name: "Pizza Tirolese", description: "mozzarella, zucchini, zwiebeln, speck, provolone, walnüsse", price: "€6.00", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-111-tirolese-primary.jpg" },
+    { name: "Pizza Bresaola", description: "tomatensauce, büffelmozzarella, rinderschinken, walnüsse, schafskäse", price: "€6.50", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-105-bresaola-primary.jpg" },
+    { name: "Pizza Salami", description: "tomatensauce, mozzarella, salami napoli, parmesan", price: "€5.00", category: "🍖 Meat Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760302796395-446943554.png" },
+    { name: "Pizza Affumicata", description: "büffelmozzarella, kochschinken, champignons, geräucherter scamorza, getrocknete tomaten", price: "€6.00", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-104-affumicata-primary.jpg" },
+    { name: "Pizza Cotto", description: "tomato sauce, mozzarella, gekochter schinken (1), provolone", price: "€5.00", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-91-cotto-primary.jpg" },
+    { name: "Pizza Paesana", description: "tomatensauce, mozzarella, champignons, prosciutto, rucola, parmesan", price: "€5.50", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-109-paesana-primary.jpg" },
+    { name: "Pizza Crudo", description: "tomatensauce, mozzarella, roher schinken (1), rosmarin, parmesan", price: "€5.00", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-107-crudo-primary.jpg" },
+
+    { name: "Pizza Provola & Sardelle", description: "tomato sauce, mozzarella, sardines, provolone, capers, chili", price: "€5.00", category: "🐟 Fish Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760305010012-889176361.jpg" },
+    { name: "Pizza Sardelle", description: "tomatensauce, knoblauch, sardinen, kapern, chili, oregano", price: "€4.50", category: "🐟 Fish Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760304857566-423399254.png" },
+    { name: "Pizza Salentina", description: "mozzarella, sardelle, gorgonzola, knoblauch, zucchini, minze, kapern, schwarze olive (2), zwiebel", price: "€5.50", category: "🐟 Fish Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-122-salentina-primary.jpg" },
+    { name: "Pizza Tonno", description: "tomatensauce, mozzarella, thunfisch, zwiebeln, kapern, oregano", price: "€5.50", category: "🐟 Fish Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-89-tonno-primary.jpg" },
+    { name: "Pizza Mare", description: "tomatensauce, knoblauch, meeresfrüchte, chili, oregano", price: "€5.50", category: "🐟 Fish Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-120-mare-primary.jpg" },
+    { name: "Pizza Frutti Di Mare", description: "meeresfrüchte, mozzarella, kirschtomaten, knoblauch, pfeffer, zitronen", price: "€6.50", category: "🐟 Fish Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760305240739-147837589.jpg" },
+
+    { name: "Insalata Tonno", description: "salat der saison, kräuter, thunfisch, zwiebeln, kapern, oregano", price: "€10.50", category: "🥗 Salads", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760305920081-371315829.jpg" },
+    { name: "Insalata Di Verdure", description: "salat der saison, kräuter, gebackenes gemüse, champignons, zucchini, kerne, oregano", price: "€9.00", category: "🥗 Salads", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760305770517-560023441.jpg" },
+    { name: "Insalata Di Capra", description: "salat der saison, friche kräuter, ziegenfrischkäse, walnüsse, getrocknete tomaten, kirschtomaten", price: "€10.00", category: "🥗 Salads", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-98-insalata-di-capra-primary.jpg" },
+    { name: "Insalata Verde", description: "salat der saison, kräuter, kartoffeln, zucchini, walnüsse, oregano", price: "€9.50", category: "🥗 Salads", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760305803191-973128012.jpg" }
+);
+
 document.addEventListener('DOMContentLoaded', () => {
     renderCategories();
     renderMenu();
