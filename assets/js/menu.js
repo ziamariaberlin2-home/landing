@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderCategories() {
-    const categories = ['🔥 Most Ordered', '🌱 Vegan Pizzas', '🥬 Vegetarian Pizzas', '🍖 Meat Pizzas', '🐟 Fish Pizzas', '🥗 Salads', '🍝 Pasta', '🥤 Non-Alcoholic Drinks', '🍺 Alcoholic Drinks', '🫒 Oil', '🍰 Desserts'];
+    const categories = [...new Set(menuData.map(item => item.category))];
     const filterBar = document.getElementById('categoryFilter');
     
     if (filterBar) {
