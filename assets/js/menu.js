@@ -60,7 +60,7 @@ menuData.push(
 
 document.addEventListener('DOMContentLoaded', () => {
     renderCategories();
-    renderMenu('🔥 Most Ordered');
+    renderMenu();
     setupFilterClicks();
 });
 
@@ -70,7 +70,7 @@ function renderCategories() {
     
     if (filterBar) {
         filterBar.innerHTML = categories.map(cat => `
-            <button class="filter-pill ${cat === '🔥 Most Ordered' ? 'active' : ''}" data-category="${cat}">
+            <button class="filter-pill" data-category="${cat}">
                 ${cat}
             </button>
         `).join('');
@@ -122,15 +122,10 @@ function setupFilterClicks() {
                 document.querySelectorAll('.filter-pill').forEach(pill => pill.classList.remove('active'));
                 e.target.classList.add('active');
                 
-                // Render selected category
+                // Keep the full menu visible and jump to the selected category.
                 const category = e.target.getAttribute('data-category');
-                renderMenu(category);
-                
-                // Scroll to top of menu
-                window.scrollTo({
-                    top: document.getElementById('menuContent').offsetTop - 100,
-                    behavior: 'smooth'
-                });
+                const target = document.getElementById(category.replace(/\s+/g, '-'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
     }
