@@ -20,25 +20,25 @@ const menuData = [
     { name: "Pizza Portofino", description: "spinat, kartoffeln, knoblauch, artischocken, rosmarin, olivenöl, chili", price: "€5.00", category: "🌱 Vegan Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760300137482-430065687.jpg" },
 
     // Vegetarian Pizzas
-    { name: "Pizza Funghi", description: "tomatensauce, mozzarella, champignons, parmesan", price: "€4.50", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-87-funghi-primary.jpg" },
-    { name: "Pizza Pesto", description: "bufelmozzarela, basilikumpesto, kirschtomaten, parmesan, basilikum", price: "€6.00", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-93-pesto-primary.jpg" },
-    { name: "Pizza Parmiggiana", description: "tomatensauce, büffelmozzarella, gegrillte aubergine, kirschtomaten, basilikum, parmesan", price: "€6.00", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-92-parmiggiana-primary.jpg" },
+    { name: "Pizza Funghi", description: "tomatensauce, mozzarella, champignons, parmesan", price: "€4.50", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-161-funghi-primary.jpg" },
+    { name: "Pizza Pesto", description: "bufelmozzarela, basilikumpesto, kirschtomaten, parmesan, basilikum", price: "€6.00", category: "🥬 Vegetarian Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-159-pesto-primary.jpg" },
+    { name: "Pizza Parmiggiana", description: "tomatensauce, büffelmozzarella, gegrillte aubergine, kirschtomaten, basilikum, parmesan", price: "€6.00", category: "🥬 Vegetarian Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760302493591-785098170.jpg" },
 
     // Meat Pizzas
-    { name: "Pizza Melanzane & Speck", description: "tomatensauce, mozzarella, champignons, auberginen, speck (1), ricotta", price: "€5.50", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-106-melanzane-and-speck-primary.jpg" },
-    { name: "Pizza Piccante", description: "tomatensauce, mozzarella, scharfe salami, artischocken, kirschtomaten, knoblauch, chili, schwarze oliven (2), kapern", price: "€5.50", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-104-piccante-primary.jpg" },
-    { name: "Pizza Patate & Cotto", description: "tomatensauce, mozzarella, kartoffeln, gekochter Schinken, schafkäse", price: "€5.00", category: "🍖 Meat Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-105-patate-and-cotto-primary.jpg" },
+    { name: "Pizza Melanzane & Speck", description: "tomatensauce, mozzarella, champignons, auberginen, speck (1), ricotta", price: "€5.50", category: "🍖 Meat Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760304689938-378113944.png" },
+    { name: "Pizza Piccante", description: "tomatensauce, mozzarella, scharfe salami, artischocken, kirschtomaten, knoblauch, chili, schwarze oliven (2), kapern", price: "€5.50", category: "🍖 Meat Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760304512164-580466459.jpg" },
+    { name: "Pizza Patate & Cotto", description: "tomatensauce, mozzarella, kartoffeln, gekochter Schinken, schafkäse", price: "€5.00", category: "🍖 Meat Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760304346249-567379583.jpg" },
 
     // Fish Pizzas
-    { name: "Pizza Mare & Provolone", description: "tomatensauce, mozzarella, meeresfrüchte, provolone, chili", price: "€5.00", category: "🐟 Fish Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-114-mare-and-provolone-primary.jpg" },
-    { name: "Pizza Napoli", description: "tomatensauce, mozzarella, sardinen, schwarze oliven (2), kirschtomaten, kapern", price: "€5.00", category: "🐟 Fish Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-113-napoli-primary.jpg" },
+    { name: "Pizza Mare & Provolone", description: "tomatensauce, mozzarella, meeresfrüchte, provolone, chili", price: "€5.00", category: "🐟 Fish Pizzas", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760305081718-53711952.jpg" },
+    { name: "Pizza Napoli", description: "tomatensauce, mozzarella, sardinen, schwarze oliven (2), kirschtomaten, kapern", price: "€5.00", category: "🐟 Fish Pizzas", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-121-napoli-primary.jpg" },
 
     // Salads
-    { name: "Insalata Mista", description: "salat der saison, kräuter, kirschtomaten, kerne, oregano, schwarze oliven", price: "€8.00", category: "🥗 Salads", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-95-insalata-mista-primary.jpg" },
-    { name: "Insalata Forte", description: "salat der saison, kräuter, büffelmozzarella, artischoken, kirschtomaten, walnüsse, ricotta", price: "€10.50", category: "🥗 Salads", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-97-insalata-forte-primary.jpg" },
+    { name: "Insalata Mista", description: "salat der saison, kräuter, kirschtomaten, kerne, oregano, schwarze oliven", price: "€8.00", category: "🥗 Salads", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760305496986-954524010.png" },
+    { name: "Insalata Forte", description: "salat der saison, kräuter, büffelmozzarella, artischoken, kirschtomaten, walnüsse, ricotta", price: "€10.50", category: "🥗 Salads", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-100-insalata-forte-primary.jpg" },
 
     // Drinks
-    { name: "Coca Cola", description: "Flasche 0,33 L", price: "€3.50", category: "🥤 Non-Alcoholic Drinks", image: "https://prenzlauerberg.ziamariaberlin.de/images/products/product-124-coca-cola-0-33l-primary.webp" },
+    { name: "Coca Cola", description: "Flasche 0,33 L", price: "€3.50", category: "🥤 Non-Alcoholic Drinks", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760306270507-336384791.png" },
     { name: "Vino Rosso", description: "Hauswein Rot, 0,25 L", price: "€6.50", category: "🍺 Alcoholic Drinks", image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80" },
 
     // Desserts
