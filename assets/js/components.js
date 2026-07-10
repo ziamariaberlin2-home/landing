@@ -20,10 +20,9 @@ function injectHeader() {
                 <a href="./index.html" data-page="index.html">Home</a>
                 <a href="./menu.html" data-page="menu.html">Menu</a>
                 <a href="./reserve.html" data-page="reserve.html">Reserve</a>
-                <a href="./host.html" data-page="host.html">Host With Us</a>
                 <a href="./blog.html" data-page="blog.html">Blog</a>
                 <a href="./contact.html" data-page="contact.html">Contact</a>
-                <a href="./reserve.html" class="btn btn-primary" style="padding: 8px 20px;">Reserve a Table</a>
+                <a href="./host.html" class="btn btn-primary" style="padding: 8px 20px;">Host With Us</a>
             </nav>
             
             <div class="mobile-toggle" id="mobileToggle">
