@@ -45,6 +45,19 @@ const menuData = [
     { name: "Tiramisu", description: "Hausgemachtes klassisches Tiramisu", price: "€6.50", category: "🍰 Desserts", image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80" }
 ];
 
+// Additional current items from the Prenzlauer Berg menu.
+menuData.push(
+    { name: "Gnocchi Montanara", description: "champignons, walnüsse, büffelmozzarella, gorgonzola, geräucherter mozzarella, rosmarin und parmesan", price: "€12.50", category: "🍝 Pasta", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-72.jpg" },
+    { name: "Gnocchi Sorrentina", description: "tomatensoße, knoblauch, büffelmozzarella, basilikum und parmesan", price: "€10.50", category: "🍝 Pasta", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-74.jpg" },
+    { name: "Gnocchi Basilico", description: "basilikum-pesto, büffelmozzarella, kirschtomaten, parmesan und basilikum", price: "€10.50", category: "🍝 Pasta", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-73.jpg" },
+    { name: "Gnocchi Amatriciana", description: "tomatensoße, speck vom schwein, schafskäse, chili und pfeffer", price: "€10.50", category: "🍝 Pasta", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-75.jpg" },
+    { name: "Garlic Olive Oil", description: "Garlic infused olive oil for dipping", price: "€0.50", category: "🫒 Oil", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-77.jpg" },
+    { name: "Chili Olive Oil", description: "Spicy chili olive oil for dipping", price: "€0.50", category: "🫒 Oil", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-76.jpg" },
+    { name: "Birra Moretti", description: "Lager beer, flasche 0,33 L", price: "€4.00", category: "🍺 Alcoholic Drinks", image: "https://prenzlauerberg.ziamariaberlin.de/images/befbf3ba-42df-11eb-ac0f-82027ecaa4ce_birra_moretti_0_33l.jpeg" },
+    { name: "Vöslauer Mineralwasser Prickelnd", description: "Mineralwasser prickelnd, Flasche 0,25 L", price: "€2.50", category: "🥤 Non-Alcoholic Drinks", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760307469672-69322776.jpg" },
+    { name: "Proviant Cola", description: "Cola, Flasche 0,33 L", price: "€4.00", category: "🥤 Non-Alcoholic Drinks", image: "https://ziamariapberg.onrender.com/api/upload/uploads/product-1760306193680-657882115.png" }
+);
+
 document.addEventListener('DOMContentLoaded', () => {
     renderCategories();
     renderMenu('🔥 Most Ordered');
@@ -52,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderCategories() {
-    const categories = ['🔥 Most Ordered', '🌱 Vegan Pizzas', '🥬 Vegetarian Pizzas', '🍖 Meat Pizzas', '🐟 Fish Pizzas', '🥗 Salads', '🥤 Non-Alcoholic Drinks', '🍺 Alcoholic Drinks', '🫒 Oil', '🍰 Desserts'];
+    const categories = ['🔥 Most Ordered', '🌱 Vegan Pizzas', '🥬 Vegetarian Pizzas', '🍖 Meat Pizzas', '🐟 Fish Pizzas', '🥗 Salads', '🍝 Pasta', '🥤 Non-Alcoholic Drinks', '🍺 Alcoholic Drinks', '🫒 Oil', '🍰 Desserts'];
     const filterBar = document.getElementById('categoryFilter');
     
     if (filterBar) {
