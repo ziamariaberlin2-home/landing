@@ -30,8 +30,13 @@ body {
     overflow-x: hidden;
 }
 
+/* Import Nunito font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
 h1, h2, h3, h4, h5, h6, .serif {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
 }
 
 .italic {
@@ -247,6 +252,90 @@ footer {
     display: flex;
     gap: 15px;
     margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #25D366;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #20BA5A;
+}
+
+/* Reviews Section */
+.reviews-section {
+    background-color: var(--off-white);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.review-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.review-stars {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+    color: var(--red);
+}
+
+.review-stars i {
+    font-size: 16px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: var(--text-mid);
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.review-author {
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .copyright {
