@@ -47,7 +47,6 @@ function injectFooter() {
                     <p class="italic">"Contemporary Italian pizza in the heart of Friedrichshain."</p>
                     <div class="social-links">
                         <a href="https://www.instagram.com/ziamaria.fhain/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/ziamaria.berlin" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
                 
@@ -66,7 +65,7 @@ function injectFooter() {
                 <div class="footer-col">
                     <h4>Visit</h4>
                     <p>Neue Bahnhofstraße 32,<br>10245 Berlin</p>
-                    <p><a href="tel:017627705583">017627705583</a></p>
+                    <p><a href="https://wa.me/49176277055583" class="whatsapp-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a></p>
                     <p><a href="mailto:bringteamtogether@ziamariaberlin.com">bringteamtogether@ziamariaberlin.com</a></p>
                 </div>
                 
