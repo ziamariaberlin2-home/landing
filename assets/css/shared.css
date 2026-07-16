@@ -37,10 +37,11 @@ h1, h2, h3, h4, h5, h6, .serif {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-style: normal !important; /* Force no italics */
 }
 
 .italic {
-    font-style: italic;
+    font-style: normal !important; /* Force no italics globally */
 }
 
 a {
