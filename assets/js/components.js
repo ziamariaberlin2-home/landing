@@ -13,7 +13,7 @@ function injectHeader() {
         <div class="container nav-container">
             <a href="./index.html" class="logo">
                 <img src="./assets/images/logo.png" alt="Zia Maria" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-                <span class="logo-text serif italic" style="display:none;">Zia Maria</span>
+                <span class="logo-text serif " style="display:none;">Zia Maria</span>
             </a>
             
             <nav class="nav-links" id="navLinks">
@@ -42,9 +42,9 @@ function injectFooter() {
                 <div class="footer-col">
                     <div class="footer-logo">
                         <img src="./assets/images/logo.png" alt="Zia Maria" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-                        <span class="logo-text serif italic" style="display:none;">Zia Maria</span>
+                        <span class="logo-text serif " style="display:none;">Zia Maria</span>
                     </div>
-                    <p class="italic">"Contemporary Italian pizza in the heart of Friedrichshain."</p>
+                    <p class="">"Contemporary Italian pizza in the heart of Friedrichshain."</p>
                     <div class="social-links">
                         <a href="https://www.instagram.com/ziamaria.fhain/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                     </div>
