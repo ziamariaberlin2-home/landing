@@ -11,18 +11,18 @@ function injectHeader() {
     
     header.innerHTML = `
         <div class="container nav-container">
-            <a href="./index.html" class="logo">
+            <a href="/" class="logo">
                 <img src="./assets/images/logo.png" alt="Zia Maria" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                 <span class="logo-text serif " style="display:none;">Zia Maria</span>
             </a>
             
             <nav class="nav-links" id="navLinks">
-                <a href="./index.html" data-page="index.html">Home</a>
-                <a href="./menu.html" data-page="menu.html">Menu</a>
-                <a href="./reserve.html" data-page="reserve.html">Reserve</a>
-                <a href="./blog.html" data-page="blog.html">Blog</a>
-                <a href="./contact.html" data-page="contact.html">Contact</a>
-                <a href="./host.html" class="btn btn-primary" style="padding: 8px 20px;">Host With Us</a>
+                <a href="/" data-page="index.html">Home</a>
+                <a href="/menu" data-page="menu.html">Menu</a>
+                <a href="/reserve" data-page="reserve.html">Reserve</a>
+                <a href="/blog" data-page="blog.html">Blog</a>
+                <a href="/contact" data-page="contact.html">Contact</a>
+                <a href="/host" class="btn btn-primary" style="padding: 8px 20px;">Host With Us</a>
             </nav>
             
             <div class="mobile-toggle" id="mobileToggle">
@@ -53,12 +53,12 @@ function injectFooter() {
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="./reserve.html">Reserve</a></li>
-                        <li><a href="./host.html">Host With Us</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/reserve">Reserve</a></li>
+                        <li><a href="/host">Host With Us</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
                 
