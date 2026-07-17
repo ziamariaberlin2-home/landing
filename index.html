@@ -18,7 +18,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/shared.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 </head>    
     <style>
         /* Page Specific Styles */
@@ -84,14 +84,13 @@
         }
 
         .story-lede {
-        color: var(--red);
-        font-family: 'Nunito', sans-serif; 
-        font-weight: 700; 
-        font-size: clamp(24px, 2.5vw, 32px);
-        line-height: 1.25;
-        margin-bottom: 24px;
+            color: var(--red);
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: clamp(24px, 2.5vw, 32px);
+            line-height: 1.25;
+            margin-bottom: 24px;
         }
-
 
         .story-body {
             color: var(--text-mid);
@@ -100,10 +99,21 @@
         }
 
         .about-image {
-            height: 620px;
+            height: auto;
+            max-height: 620px;
             background: var(--off-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
             border-radius: var(--radius);
-            box-shadow: var(--shadow);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 20px;
         }
         
         .about-features {
@@ -239,8 +249,8 @@
                 <p class="hero-subtitle" style="font-family: 'Permanent Marker', cursive; font-weight: 400; font-style: normal; font-size: clamp(3rem, 6vw, 4.5rem); color: var(--white); margin-top: 0.5rem; margin-bottom: 0;">Zia Maria</p>
                 <p class="hero-subtitle" style="font-family: 'Permanent Marker', cursive; font-weight: 400; font-style: normal; font-size: clamp(1.0rem, 2.5vw, 2rem); color: var(--white); margin-top:0; margin-bottom: 5rem;">Brings us together</p>
                 <div class="hero-btns">
-                    <a href="./menu.html" class="btn btn-primary">View Menu</a>
-                    <a href="./host.html" class="btn btn-white-outline">Hosting With Us</a>
+                    <a href="/menu" class="btn btn-primary">View Menu</a>
+                    <a href="/host" class="btn btn-white-outline">Hosting With Us</a>
                 </div>
                 <span class="hero-eyebrow" style="display: block; margin-top: 1.5rem;">Friedrichshain · Berlin</span>
             </div>
@@ -338,7 +348,7 @@
                 </div>
                 
                 <div class="preview-cta">
-                    <a href="./menu.html" class="btn btn-primary">Explore the Full Menu →</a>
+                    <a href="/menu" class="btn btn-primary">Explore the Full Menu →</a>
                 </div>
             </div>
         </section>
@@ -395,7 +405,7 @@
             <div class="container">
                 <h2 class="serif">Planning an Event?</h2>
                 <p>Birthday dinners, corporate events, private celebrations — our space is yours.</p>
-                <a href="./host.html" class="btn btn-white">Host With Us →</a>
+                <a href="/host" class="btn btn-white">Host With Us →</a>
             </div>
         </section>
 
