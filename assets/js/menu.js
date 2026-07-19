@@ -47,10 +47,7 @@ const menuData = [
 
 // Additional current items from the Prenzlauer Berg menu.
 menuData.push(
-    { name: "Gnocchi Montanara", description: "champignons, walnüsse, büffelmozzarella, gorgonzola, geräucherter mozzarella, rosmarin und parmesan", price: "€12.50", category: "🍝 Pasta", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-72.jpg" },
-    { name: "Gnocchi Sorrentina", description: "tomatensoße, knoblauch, büffelmozzarella, basilikum und parmesan", price: "€10.50", category: "🍝 Pasta", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-74.jpg" },
-    { name: "Gnocchi Basilico", description: "basilikum-pesto, büffelmozzarella, kirschtomaten, parmesan und basilikum", price: "€10.50", category: "🍝 Pasta", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-73.jpg" },
-    { name: "Gnocchi Amatriciana", description: "tomatensoße, speck vom schwein, schafskäse, chili und pfeffer", price: "€10.50", category: "🍝 Pasta", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-75.jpg" },
+
     { name: "Garlic Olive Oil", description: "Garlic infused olive oil for dipping", price: "€0.50", category: "🫒 Oil", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-77.jpg" },
     { name: "Chili Olive Oil", description: "Spicy chili olive oil for dipping", price: "€0.50", category: "🫒 Oil", image: "https://prenzlauerberg.ziamariaberlin.de/images/wolt-asset-76.jpg" },
     { name: "Birra Moretti", description: "Lager beer, flasche 0,33 L", price: "€4.00", category: "🍺 Alcoholic Drinks", image: "https://prenzlauerberg.ziamariaberlin.de/images/befbf3ba-42df-11eb-ac0f-82027ecaa4ce_birra_moretti_0_33l.jpeg" },
