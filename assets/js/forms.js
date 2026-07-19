@@ -1,12 +1,5 @@
-// ── EMAILJS SETUP INSTRUCTIONS ──
-// 1. Go to https://www.emailjs.com and create a free account
-// 2. Add an Email Service (Gmail or your domain SMTP) → copy the Service ID
-// 3. Create two Email Templates:
-//    - Reservation template: include fields {{name}}, {{phone}}, {{email}}, {{date}}, {{time}}, {{guests}}, {{notes}}
-//    - Host enquiry template: include fields {{name}}, {{phone}}, {{email}}, {{city}}, {{event_date}}, {{event_type}}, {{guests}}, {{budget}}, {{message}}
-//    Set "To Email" in each template to: bringteamtogether@ziamariaberlin.com
-// 4. Go to Account → API Keys → copy your Public Key
-// 5. Replace the three placeholder strings below with your real values
+// ── EMAILJS SETUP  ──
+
 
 const EMAILJS_PUBLIC_KEY = 'fJjxFb00WcpGc9lDX';
 const EMAILJS_RESERVATION_TEMPLATE = 'template_q4vwcwm';
@@ -81,15 +74,15 @@ async function handleHostSubmit(e) {
     setLoading(submitBtn, true);
     
     const formData = {
-        name: form.yourName.value,
-        phone: form.phone.value,
-        email: form.email.value,
-        city: form.city.value,
-        event_date: form.eventDate.value,
-        event_type: form.eventType.value,
-        guests: form.guests.value,
-        budget: form.budget.value,
-        message: form.message.value
+        name: form.querySelector('#yourName').value,
+        phone: form.querySelector('#phone').value,
+        email: form.querySelector('#email').value,
+        city: form.querySelector('#city').value,
+        event_date: form.querySelector('#eventDate').value,
+        event_type: form.querySelector('#eventType').value,
+        guests: form.querySelector('#guests').value,
+        budget: form.querySelector('#budget').value,
+        message: form.querySelector('#message').value
     };
 
     try {
